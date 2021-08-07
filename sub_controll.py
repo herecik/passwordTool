@@ -18,7 +18,12 @@ def check_password(password):
     if(len(password) > 7):
         if(upper == 1 and lower == 1 and number == 1):
             print("Password is good.")
-            #TODO save password with username to database
+        elif(upper == 0):
+            print("Your password is missing an uppercase character.")
+        elif(lower == 0):
+            print("Your password is missing a lowercase character.")
+        elif(lower == 0):
+            print("Your password is missing a digit.")
         else:
             print("Your password isn't strong enough.")
     else:
