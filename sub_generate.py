@@ -1,6 +1,7 @@
 import random
 import string
 import time
+
 def numeric_input_check(input):
     try:
         int(input)
@@ -11,15 +12,18 @@ def numeric_input_check(input):
 def generate_rand(size, chars = string.ascii_lowercase + string.ascii_uppercase + string.digits):
     return "".join(random.choice(chars) for _ in range(size)) + "A" + time.strftime("%S")
 #TODO play more with pass generation to ensure always at least one upper, lower case charr and number
+
 def generate_spec():
     return "specspec558"
 
 def check_conditions(parametres):
+
     total = int(parametres[0])
     cap = int(parametres[1])
     ncap = int(parametres[2])
     num = int(parametres[3])
     fit = cap + ncap + num
+
     if(total < fit):
         print("Your password is too short for your demands")
         exit(1)
