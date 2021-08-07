@@ -2,7 +2,7 @@ import sys
 from sub_controll import *
 from sub_generate import *
 
-parametres = ["lenght", "capital", "non", "numbers"]
+parametres = ["capital", "non", "numbers", "4"]
 
 def help_prompt():
     print("Choose controll or generate as a program argument to generate new password or to controll your password")
@@ -13,8 +13,7 @@ def controll_password():
 
 def generate_password():
     password = get_parameters(parametres)
-    #check_conditions(parametres)
-    print(password)
+    print("Your new 100% secure password is: " + password)
 
 def error_prompt(state):
     if(state == 0):
