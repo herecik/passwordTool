@@ -10,7 +10,7 @@ def numeric_input_check(input):
 
 def generate_rand(size, chars = string.ascii_lowercase + string.ascii_uppercase + string.digits):
     return "".join(random.choice(chars) for _ in range(size)) + "A" + time.strftime("%S")
-
+#TODO play more with pass generation to ensure always at least one upper, lower case charr and number
 def generate_spec():
     return "specspec558"
 
