@@ -43,6 +43,4 @@ def check_args():
 
 check_args()
 
-#test 252 
-#sadasd
 
