@@ -35,11 +35,9 @@ def operation():
 def check_args():
     if(len(sys.argv) < 2):
         error_prompt(0)
-    else:
-        operation()
+        exit(1)
 
-
-
+operation()
 check_args()
 
 
