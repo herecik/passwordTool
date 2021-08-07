@@ -1,4 +1,6 @@
-
+import random
+import string
+import time
 def numeric_input_check(input):
     try:
         int(input)
@@ -6,8 +8,8 @@ def numeric_input_check(input):
         print("Input error. Choose only inteegers.")
         exit(1)
 
-def generate_rand():
-    return "asd2585ds"
+def generate_rand(size, chars = string.ascii_lowercase + string.ascii_uppercase + string.digits):
+    return "".join(random.choice(chars) for _ in range(size)) + "A" + time.strftime("%S")
 
 def generate_spec():
     return "specspec558"
@@ -37,7 +39,7 @@ def get_parameters(parametres):
         new_password = generate_spec()
         return new_password
     else:
-        new_password = generate_rand()
+        new_password = generate_rand(8)
         return new_password
            
 
