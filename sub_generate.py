@@ -32,7 +32,6 @@ def get_parameters(parametres):
     y = input("Do you want specify your password? [y/n]: ")
 
     if(y == "y"):
-        
         parametres[0] = input("Choose how many capital letter in password: ")
         parametres[1] = input("Choose how many non-capital letter in password: ")
         parametres[2] = input("Choose how many numbers in password: ")
